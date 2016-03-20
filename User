@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WpfApplication2
+{
+    class User
+    {
+        private string name;
+        private string password;
+        private string email;
+        private string address;
+        private string phonenumber;
+        private char gender;
+        private double totalpayment;
+        Product[] boughtproducts = new Product[100];
+        Payment paymentmethod = new Payment;
+        static int numberofproducts=0;
+
+        public User(string name, string password, string email,string address, 
+            string phonenumber, char gender, double totalpayment, Payment userpayment)
+        { this.name = name;
+            this.password = password;
+            this.email = email;
+            this.address = address;
+            this.phonenumber = phonenumber;
+            this.gender = gender;
+            this.totalpayment = totalpayment;
+            this.paymentmethod = paymentmethod;
+
+
+        }
+        public bool login() {string username,string password }
+        {
+
+
+        }
+        public void addtocart(Product product)
+        {
+            boughtproducts[numberofproducts] = product;
+            numberofproducts++;
+       }
+
+            }
+
+
+}
