@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Amazon
+{
+    class Product()
+    {
+        private string Name;
+        private string Category;
+        private double Price;
+        private int Quantity;
+
+        public void Product(string Name,string Category,double Price,int Quantity){          
+            this.Name = Name; 
+            this.Category = Category;
+            this.Price = Price;
+            this.Quantity = Quantity;           
+        }
+
+        public Product AddToUser(){
+            return this;
+        }
+
+        public void Delete(){
+            this.Name = null; 
+            this.Category = null;
+            this.Price = 0.0;
+            this.Quantity = 0;
+        }
+    }
+}
