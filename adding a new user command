@@ -1,0 +1,12 @@
+//template for adding a new user
+
+       	string inputFile = "mydatabase.sqlite";
+        string dbConnection = String.Format("Data Source={0}", inputFile);
+        string sql = "insert into User ('Id', 'name', 'email', 'address', phone_number', 'gender', 'serial_number', 'PIN', 'password', 'num_items_bought') 
+				values ('2',  'name', 'email', 'address', phonenumber' , 'gender', 'serialno', 'pin', 'password', 'numberofproducts')
+         SQLiteConnection cnn = new SQLiteConnection(dbConnection);
+          cnn.Open();
+          SQLiteCommand mycommand = new SQLiteCommand(cnn);
+          mycommand.CommandText = sql;
+          int rowsUpdated = mycommand.ExecuteNonQuery();
+          cnn.Close();
