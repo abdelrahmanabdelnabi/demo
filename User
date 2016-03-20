@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfApplication2
+namespace Amazon
 {
     class User
     {
@@ -15,12 +15,13 @@ namespace WpfApplication2
         private string phonenumber;
         private char gender;
         private double totalpayment;
+        int id;
         Product[] boughtproducts = new Product[100];
         Payment paymentmethod = new Payment;
         static int numberofproducts=0;
 
         public User(string name, string password, string email,string address, 
-            string phonenumber, char gender, double totalpayment, Payment userpayment)
+            string phonenumber, char gender, double totalpayment,int id, Payment userpayment)
         { this.name = name;
             this.password = password;
             this.email = email;
@@ -28,11 +29,12 @@ namespace WpfApplication2
             this.phonenumber = phonenumber;
             this.gender = gender;
             this.totalpayment = totalpayment;
+            this.id = id;
             this.paymentmethod = paymentmethod;
 
 
         }
-        public bool login() {string username,string password }
+        public bool login() {string username, string password }
         {
 
 
